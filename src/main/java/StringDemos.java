@@ -31,6 +31,18 @@ public class StringDemos {
         String supi = "1234.38";
         double id = Double.parseDouble(supi);
         System.out.println(id);
+        //System.out.println(1/0);
+
+        String se = "test";
+        String se2 = "test";
+        // Never compare Srings with == , always with equals method
+        System.out.println(se.equals(se2));
+
+
+        int a = 6;
+        int b = 3;
+        System.out.println(a % 3 == 0) ;
+
 
 
     }
