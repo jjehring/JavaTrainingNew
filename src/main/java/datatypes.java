@@ -2,7 +2,7 @@ public class datatypes {
     public static void main(String[] args) {
 
         // 8 primitiv datatype in JAVA
-        // string is not a dataytype but an object
+        // string is not a dataytype but an object from the class String
         byte b = 10;
         short s = 1000;
         int ida = 1000000;
@@ -35,6 +35,11 @@ public class datatypes {
         // OR ||
         boolean stillWorthBuying = productCheap || productGood;
         System.out.println(stillWorthBuying);
+
+        // STring is an object
+        String str = "Hello STZring";
+        System.out.println("charAT: " + str.charAt(10));
+        System.out.println(str);
 
     }
 
