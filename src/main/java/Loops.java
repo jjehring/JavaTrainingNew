@@ -5,7 +5,7 @@ public class Loops {
            System.out.println(i);
            i--;
            try {
-               Thread.sleep(1000);
+               Thread.sleep(100);
            } catch (InterruptedException e) {
                e.printStackTrace();
            }
@@ -15,6 +15,12 @@ public class Loops {
 /*       for (int b = i; b <= i; b--) {
             System.out.println(b);
        }*/
+        i = 10;
+        while (true) {
+            System.out.println(i);
+            i = i -1;
+            if (i < 2) break;
+        }
     }
 }
 
