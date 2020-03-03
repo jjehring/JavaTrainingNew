@@ -60,6 +60,10 @@ public class Hello {
         byte t = (byte) s; // typecast casting a short into byte... bytes werden abgeschnitten
         System.out.println("byte: " + t);
 
+        int test = 7;
+        String testSTri = Integer.toBinaryString(test);
+        System.out.println(testSTri);
+
 
 
     }
