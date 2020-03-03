@@ -4,17 +4,19 @@ public class datatypes {
         // 8 primitiv datatype in JAVA
         // string is not a dataytype but an object from the class String
         // datatypes are signed--- from minus to positiv
-        byte b = 10;         // 8  bytes
-        short s = 1000;      // 16 bytes
-        int ida = 1000000;   // 32 bytes --> equivilant to char
-        long l = 10000000L;  // 64 bytes
-        float fl = 0.1f;     // 32 bytes
-        double d = 0.1;      // 64 bytes
+        byte    b   = 10;         // 8  bits
+        short   s   = 1000;       // 16 bits
+        int     ida = 1000000;    // 32 bits --> equivilant to char
+        long    l   = 10000000L;  // 64 bits
+        float   fl  = 0.1f;       // 32 bits
+        double  d   = 0.1;        // 64 bits
+        // Do NOT compare doubles and floats
 
         boolean bde = true ; // 1 byte
-        char ct = 'p' ;      // --> equivilant to int
+        char    ct  = 'p' ;      // --> equivilant to int
 
-        //
+        // the ninth datatype would be void
+
 
 
 
