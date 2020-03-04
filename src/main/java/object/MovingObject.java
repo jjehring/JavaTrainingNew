@@ -6,16 +6,24 @@ public class MovingObject {
     private double posY  ;
     private double velX  ;
     private double velY  ;
-    private double borderX;
-    private double borderY;
+    private double borderX = 20;
+    private double borderY = 20;
 
+    // First Constructer
     public MovingObject(double posX, double posY,double velX, double velY ) {
         this.posX = posX;
         this.posY = posY;
         this.velX = velX;
         this.velY = velY;
-        this.borderX = 20;
-        this.borderY = 20;
+
+    }
+    // escond Constructer
+    public MovingObject( ) {
+        this.posX = 0;
+        this.posY = 0;
+        this.velX = 0;
+        this.velY = 0;
+
     }
 
     public void mvObj() {
