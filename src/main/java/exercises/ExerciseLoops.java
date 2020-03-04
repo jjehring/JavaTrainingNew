@@ -1,5 +1,7 @@
 package exercises;
 
+import sun.font.CreatedFontTracker;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -104,16 +106,23 @@ public class ExerciseLoops {
      * Return true if c is a vowel (a,e,i,o,u), false otherwise
      */
     static boolean isVowel(char c) {
-        throw new RuntimeException("not implemented");
+        return "AEIOUaeiou".indexOf(c) != -1 ;
     }
 
     /**
      * return the number of vowels in string s
      */
     static int countVowels(String s) {
-        throw new RuntimeException("not implemented");
-    }
+        int count = 0;
+        for (int i = 0 ; i<s.length();i++)
+        {
+            if (isVowel(s.charAt(i))) {
+                count++;
+            }
+        }
 
+    return count;
+    }
     /**
      * Test, if s is a palindrome:
      *
@@ -127,7 +136,11 @@ public class ExerciseLoops {
      * palindrome('abcbb') -> False
      */
     static boolean palindrome(String s) {
-        throw new RuntimeException("not implemented");
+        for (int i = 0, j=s.length()-1;i<j;i++,j--) {
+            if (s.charAt(i) != s.charAt(j))
+                return false;
+        }
+        return true;
     }
 
     /**
@@ -143,24 +156,27 @@ public class ExerciseLoops {
      *
      */
     static List<Integer> threeNPlusOne(int n) {
-/*        assertEquals(Arrays.asList(3,10,5,16,8,4,2,1), ExerciseLoops.threeNPlusOne(3));
+/*      assertEquals(Arrays.asList(3,10,5,16,8,4,2,1), ExerciseLoops.threeNPlusOne(3));
         assertEquals(Arrays.asList(4,2,1), ExerciseLoops.threeNPlusOne(4));
         assertEquals(Arrays.asList(1), ExerciseLoops.threeNPlusOne(1));
         assertEquals(Arrays.asList(7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16,8, 4, 2, 1), ExerciseLoops.threeNPlusOne(7));*/
+
         List<Integer> list = new ArrayList<Integer>();
         list.add(n);
-        System.out.println(list.size());
-        for (int i = n; i >= 1 ; i--) {
-            System.out.println(i);
-            if((i%2)==0) {
-                list.add(i/2);
-            } else {
-                list.add(i * 3 + 1);
+        System.out.println("listsize: " + list.size());
+
+        while ( n != 1 ) {
+            if ( n%2 == 0 ) {
+                System.out.println("out even:" + n/2);
+                list.add(n/2);
+            } else  {
+                System.out.println("out odd:" + (n * 3 + 1));
+                list.add(n * 3 + 1);
             }
-        }
+            n--;
+         }
+
         list.add(1);
-
-
         return list;
     }
 }
