@@ -175,8 +175,8 @@ public class ExerciseLoops {
             }
             n--;
          }
-
         list.add(1);
         return list;
     }
 }
+
