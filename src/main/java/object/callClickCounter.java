@@ -9,15 +9,10 @@ public class callClickCounter {
         cli.upCounter();
         System.out.println(cli.getClickCounter());
         cli.resetClickCounter();
+
+        cli.upCounter().upCounter().upCounter();
         System.out.println(cli.getClickCounter());
-        cli.upCounter();
-        System.out.println(cli.getClickCounter());
-        cli.upCounter();
-        System.out.println(cli.getClickCounter());
-        cli.upCounter();
-        System.out.println(cli.getClickCounter());
-        cli.upCounter();
-        System.out.println(cli.getClickCounter());
+
 
     }
 }

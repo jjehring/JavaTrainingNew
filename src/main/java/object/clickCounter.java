@@ -14,16 +14,18 @@ public class clickCounter {
         clickCounterVar = 0;
     }
 
-    public void upCounter() {  // void just says it a method without return
+    public clickCounter upCounter() {  // void just says it a method without return
         clickCounterVar++;
+        return this;
     }
 
     public int getClickCounter() {
         return clickCounterVar;
     }
 
-    public void resetClickCounter() {
+    public clickCounter resetClickCounter() {
         clickCounterVar = 0;
+        return this;
     }
 
 }
