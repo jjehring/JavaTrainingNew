@@ -40,6 +40,7 @@ public class Screen extends JFrame {
         Insets in = getInsets();
         backbuffer.getGraphics().setColor(Color.WHITE);
         backbuffer.getGraphics().drawOval(in.left+x1,in.top+y1,radius,radius);
+
         repaint();
     }
 

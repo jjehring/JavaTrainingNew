@@ -41,7 +41,7 @@ public class datatypes {
         boolean stillWorthBuying = productCheap || productGood;
         System.out.println(stillWorthBuying);
 
-        // STring is an object
+        // STring is an object -- STrings are immutable in Java.. You cannot change a String in Java
         String str = "Hello STZring";
         System.out.println("charAT: " + str.charAt(10));
         System.out.println(str);
