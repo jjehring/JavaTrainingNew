@@ -49,7 +49,7 @@ class Employee extends Person2 {
             Person2 p = new Employee("Anna","muster", 1000, 2000);
             Person2 po = new Person2("gunnar", "blöäd");
             System.out.println(p.getFirstName() + ":" + p.getLastName() + "" + ((Employee) p).getEmployed());
-            System.out.println(po.getFirstName() ;
+
         }
 
     }
