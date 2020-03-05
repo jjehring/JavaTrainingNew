@@ -16,6 +16,23 @@ public class arrayClass {
             System.out.println("PrintOut array: " + table[i]);
         }
 
+        // Multidimensional Arrays
+        int [][] square = {
+                {16,3,2,13},   // row 0
+                {5,10,11,8},   // row 1
+                {9,6,7,12},
+                {4,15,14,1}
+        };
+        System.out.println(square[2][2]);
+        for ( int i = 0 ; i< square.length ; i++)
+        {
+            System.out.println("row " + square[i]);
+            for ( int a = 0 ; a< square.length ; a++) {
+                System.out.println(square[i][a]);
+            }
+
+        }
+
       /*  Scanner s = new Scanner(System.in);
         int[] scores = new int[];
         int counter = 0 ;
