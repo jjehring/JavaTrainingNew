@@ -1,12 +1,7 @@
 package stack;
 
 import javax.crypto.spec.PSource;
-
-class StackFullException extends RuntimeException {
-    public StackFullException () {
-        System.out.println("exception");
-    }
-}
+import java.util.Calendar;
 
 public class Thomas implements StackLike {
     private int[] stack = new int[100];
@@ -14,6 +9,7 @@ public class Thomas implements StackLike {
 
     public static void main(String[] args) {
         Thomas th = new Thomas();
+
         th.push(2);
         System.out.println(th.isEmpty());
         System.out.println(th.toString());

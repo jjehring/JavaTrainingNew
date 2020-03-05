@@ -1,6 +1,8 @@
 package exercises;
 
 
+import com.sun.org.apache.xerces.internal.xs.LSInputList;
+
 import java.util.*;
 
 public class ExerciseLists {
@@ -9,14 +11,31 @@ public class ExerciseLists {
      *
      */
     static int sum(List<Integer> ints) {
-        throw new RuntimeException("not implemented");
+        ListIterator<Integer> iterator = ints.listIterator();
+        int sumUp = 0;
+        while (iterator.hasNext()) {
+            int nextVal = iterator.next();
+            System.out.println("Value is : " + nextVal);
+            sumUp = sumUp + nextVal;
+            }
+        return sumUp;
     }
 
     /**
      * Calculates the mean/average of the elements
      */
     static double mean(List<Integer> ints) {
-        throw new RuntimeException("not implemented");
+        ListIterator<Integer> iterator = ints.listIterator();
+        int sumUp = 0;
+        while (iterator.hasNext()) {
+            int nextVal = iterator.next();
+            System.out.println("Value is : " + nextVal);
+            sumUp = sumUp + nextVal;
+        }
+        double retDob = (double) sumUp/ints.size();
+        return retDob;
+        //return (double) sum(ints) / ints.size();
+
     }
 
     /**
@@ -26,6 +45,9 @@ public class ExerciseLists {
      * (this is the population variance)
      */
     static double variance(List<Integer> ints) {
+        double result = 0.0;
+        double av = mean(ints);
+
         throw new RuntimeException("not implemented");
     }
 
@@ -33,13 +55,68 @@ public class ExerciseLists {
      * returns a new, reversed list of numbers
      */
     static List<Integer> reverseList(List<Integer> ints) {
-        throw new RuntimeException("not implemented");
+/*        List<Integer> revlist  = new LinkedList<>(ints);
+        Collections.reverseOrder(revlist);
+        return revlist;*/
+
+        List<Integer> myRetList = new ArrayList<Integer>();
+        int lFirst = ints.get(0);
+        int lLast = ints.get(ints.size()-1);
+        System.out.println(lFirst + ":" + lLast);
+        //if (lFirst <= lLast) {
+            ListIterator<Integer> iterator = ints.listIterator(ints.size());
+            System.out.println("normal");
+            while (iterator.hasPrevious()) {
+                int nextVal = iterator.previous();
+                System.out.println("Value is : " + nextVal);
+                myRetList.add(nextVal);
+            }
+              return myRetList;
+
+
+       // }
+/*        else {
+            ListIterator<Integer> iterator2 = ints.listIterator();
+            System.out.println("reverse" );
+            while (iterator2.hasPrevious()) {
+                int nextVal = iterator2.previous();
+                System.out.println("Value is : " + nextVal);
+                myRetList.add(nextVal);
+            }*/
+
+        //}
+/*        int sumUp = 0;
+        while (iterator.hasNext()) {
+            int nextVal = iterator.next();
+            System.out.println("Value is : " + nextVal);
+            sumUp = sumUp + nextVal;
+        }*/
+
     }
+
+
+
+
+/*
+        for(Integer inti: ints){
+            System.out.println("Befire:  " + inti);
+        }
+        Collections.sort(ints,Collections.reverseOrder());
+
+        for(Integer inti: ints){
+            System.out.println("After´:  " + inti);
+        }
+        return ints;*/
+
+
+
 
     /**
      * reverses the given string
      */
     static String reverseString(String s) {
+
+
         throw new RuntimeException("not implemented");
     }
 
