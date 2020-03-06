@@ -10,7 +10,7 @@ public class FileExampleJavaNio {
         File myfile = new File("C:\\Training\\src\\main\\java\\fileHandling\\test.txt");
         File myfileOut = new File("C:\\Training\\src\\main\\java\\fileHandling\\testOut.txt");
 
-        Stream<String> lines = Files.lines(Paths.get(myfile))
+       // Stream<String> lines = Files.lines(Paths.get(myfile))
 
 
     //    File myfile = new File("test2.txt");
