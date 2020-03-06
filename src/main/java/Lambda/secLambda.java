@@ -7,7 +7,7 @@ public class secLambda {
     }
 
     public static void twice(Runnable code) {
-        code.run();code.run();
+         code.run();code.run();
     }
 
     public static void main(String[] args) {
