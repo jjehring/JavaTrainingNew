@@ -9,7 +9,7 @@ public class memTest {
            // byte b[] = new byte[100000];
             v.add(b);
             Runtime rt = Runtime.getRuntime();
-            System.out.println( "free memory: " + rt.freeMemory() );
+            System.out.println( "free memory: " + rt.freeMemory()/1204 );
             Thread.sleep(10);
         }
     }
